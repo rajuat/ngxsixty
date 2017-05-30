@@ -1,3 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-container>
+    <md-sidenav #sidenav mode="push">
+        <app-header></app-header>
+    </md-sidenav>
+    <div class="my-content">
+        <md-button-toggle (click)="sidenav.open()">
+            <md-icon >menu</md-icon>
+        </md-button-toggle>
+       <router-outlet></router-outlet>
+    </div>
+</md-sidenav-container>
