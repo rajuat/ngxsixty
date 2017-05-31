@@ -1,21 +1,71 @@
-<md-nav-list>
-  <md-list-item>
-     <a routerLink="/about">About us</a>     
-  </md-list-item>
-  <br>
-  <md-list-item>
-     <a routerLink="/why">Why us</a>     
-  </md-list-item>
-  <br>  
-  <md-list-item>
-     <a routerLink="/diet">Diet</a>     
-  </md-list-item>
-  <br>
-  <md-list-item>
-     <a routerLink="/schedule">Schedule</a>     
-  </md-list-item>
-  <br>
-  <md-list-item>
-     <a routerLink="/contact">Contact us</a>     
-  </md-list-item>
-</md-nav-list>
+<aside id="sidebar" 
+    class="sidebar sidebar-default open" 
+    role="navigation"
+    >
+
+    <!-- Sidebar header -->
+    <a class="sidebar-header header-cover" routerLink="/home">
+        <!-- Sidebar brand image -->
+        <div class="sidebar-image">
+            <img src="assets/images/logo.png" style="height: 150px; width: 200px;">
+        </div>
+    </a>
+
+    <br>
+    <md-divider></md-divider>
+    <br>
+    <div >
+    <!-- Sidebar navigation -->
+    <ul class="nav sidebar-nav">
+        <li>
+            <a routerLink="/about">
+                <i class="sidebar-icon md-inbox"></i>
+                About Us
+            </a>
+        </li>
+        <li>
+            <a routerLink="/why">
+                <i class="sidebar-icon md-star"></i>
+                Why X360?
+            </a>
+        </li>
+        <li>
+            <a routerLink="/crossfit">
+                <i class="sidebar-icon md-send"></i>
+                About Crossfit
+            </a>
+        </li>
+        <li>
+            <a routerLink="/diet">
+                <i class="sidebar-icon md-drafts"></i>
+                About Zone Diet
+            </a>
+        </li>
+        <li>
+            <a routerLink="/schedule">
+                <i class="sidebar-icon md-drafts"></i>
+                Schedule
+            </a>
+        </li>
+        <li>
+            <a routerLink="/contact">
+                <i class="sidebar-icon md-drafts"></i>
+                Contact Us
+            </a>
+        </li>
+    </ul>
+
+    <a class="btn btn-social-icon btn-facebook" target="_blank" href="http://www.facebook.com">
+        <span class="fa fa-facebook"></span>
+    </a>
+
+    <a class="btn btn-social-icon btn-google" target="_blank" href="http://www.google.com">
+        <span class="fa fa-google"></span>
+    </a> 
+    
+    <a class="btn btn-social-icon btn-instagram" target="_blank" href="http://www.instagram.com">
+        <span class="fa fa-instagram"></span>
+    </a>
+    </div>
+
+</aside>

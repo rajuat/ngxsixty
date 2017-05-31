@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MdIconModule } from '@angular/material';
 import { MdSidenavModule } from '@angular/material';
+import { MdToolbarModule } from '@angular/material';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
@@ -21,13 +22,15 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { CrossfitComponent } from './crossfit/crossfit.component';
 
 
 const materialModules = [
   BrowserAnimationsModule,
   NoopAnimationsModule,
   MdIconModule,
-  MdSidenavModule
+  MdSidenavModule,
+  MdToolbarModule
 ];
 
 @NgModule({
@@ -39,14 +42,15 @@ const materialModules = [
     ScheduleComponent,
     ContactComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    CrossfitComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     FormsModule,
     HttpModule,
-    CarouselModule.forRoot(),
+    CarouselModule,
   ].concat(materialModules),
 
   providers: [],

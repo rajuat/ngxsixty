@@ -20,7 +20,9 @@
       "prefix": "app",
       "styles": [
         "app-theme.scss",
-        "styles.css"
+        "styles.css",
+        "assets/styles/bootstrap-social.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
