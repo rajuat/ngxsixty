@@ -3,14 +3,16 @@
     <app-header></app-header>
   </md-sidenav>
   <div class="my-content">
-    <md-button-toggle (click)="sidenav.open()">
-      <md-icon>menu</md-icon>
-    </md-button-toggle>
-    <router-outlet></router-outlet>
+
+    <router-outlet>
+      <md-button-toggle (click)="sidenav.open()">
+        <md-icon>menu</md-icon>
+      </md-button-toggle>
+    </router-outlet>
     <md-toolbar class="push">
       Here is my footer
     </md-toolbar>
   </div>
-  <div class="footer">    
+  <div class="footer">
   </div>
 </md-sidenav-container>

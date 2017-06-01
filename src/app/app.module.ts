@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { CommonModule } from '@angular/common';
 
 import 'hammerjs';
 
@@ -12,7 +13,7 @@ import { MdIconModule } from '@angular/material';
 import { MdSidenavModule } from '@angular/material';
 import { MdToolbarModule } from '@angular/material';
 
-import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CarouselModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -34,6 +35,15 @@ const materialModules = [
 ];
 
 @NgModule({
+  imports: [
+    CarouselModule.forRoot(),
+    CommonModule,
+    AppRoutingModule,
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+  ].concat(materialModules),
+
   declarations: [
     AppComponent,
     AboutUsComponent,
@@ -45,13 +55,6 @@ const materialModules = [
     HomeComponent,
     CrossfitComponent
   ],
-  imports: [
-    AppRoutingModule,
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    CarouselModule,
-  ].concat(materialModules),
 
   providers: [],
   bootstrap: [AppComponent]

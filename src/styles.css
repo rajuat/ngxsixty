@@ -1,31 +1,38 @@
-html, body, material-app, md-sidenav-container, .my-content {
+html,
+body,
+material-app,
+md-sidenav-container,
+.my-content {
   margin: 0;
   width: 100%;
   height: 100%;
- 
 }
 
 md-sidenav {
-   padding: 16px;
+  padding: 16px;
 }
 
 .footer {
-    position: absolute;
-    right:0;
-    left:0;
-    bottom:0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .my-content {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -64px; /* the bottom margin is the negative value of the footer's height */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -64px;
+  /* the bottom margin is the negative value of the footer's height */
 }
 
-.footer, .push {
-    height: 64px; /* .push must be the same height as .footer */
+.footer,
+.push {
+  height: 64px;
+  /* .push must be the same height as .footer */
 }
 
-
-
+.mat-sidenav-backdrop.mat-sidenav-shown {
+  background: transparent !important;
+}
