@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { CommonModule } from '@angular/common';
 
+import { AngularFireModule } from 'angularfire2';
+
 import 'hammerjs';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,6 +14,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MdIconModule } from '@angular/material';
 import { MdSidenavModule } from '@angular/material';
 import { MdToolbarModule } from '@angular/material';
+import { MdCardModule } from '@angular/material';
+import { MdGridListModule } from '@angular/material';
 
 import { CarouselModule } from 'ngx-bootstrap';
 
@@ -31,13 +35,25 @@ const materialModules = [
   NoopAnimationsModule,
   MdIconModule,
   MdSidenavModule,
-  MdToolbarModule
+  MdToolbarModule,
+  MdCardModule,
+  MdGridListModule
 ];
+
+
+export const firebaseConfig = {
+    apiKey: "AIzaSyCSH7Mki02atIRZpPad873adWlYbgZwpOw",
+    authDomain: "x-sixty.firebaseapp.com",
+    databaseURL: "https://x-sixty.firebaseio.com",
+    projectId: "x-sixty",
+    storageBucket: "x-sixty.appspot.com",
+    messagingSenderId: "379360347057"
+};
 
 @NgModule({
   imports: [
-    CarouselModule.forRoot(),
-    CommonModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    CarouselModule,
     AppRoutingModule,
     BrowserModule,
     FormsModule,

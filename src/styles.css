@@ -1,3 +1,5 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 html,
 body,
 material-app,
@@ -12,12 +14,7 @@ md-sidenav {
   padding: 16px;
 }
 
-.footer {
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
+
 
 .my-content {
   min-height: 100%;
@@ -35,4 +32,10 @@ md-sidenav {
 
 .mat-sidenav-backdrop.mat-sidenav-shown {
   background: transparent !important;
+}
+
+.example-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

@@ -1,0 +1,11 @@
+.example-card {
+  padding: 8px;
+  margin: 8px;
+}
+
+.example-header-image {
+  background-image: url('../../assets/images/dummy.png');
+  background-size: cover;
+  height: 48px;
+  width: 48px;
+}
