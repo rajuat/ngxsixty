@@ -5,11 +5,23 @@
       <md-icon>menu</md-icon>
       </button>
     </section>
-    <section>Logo</section>
+    <section style="padding-top: 26px;">
+      <font color="#AD1515">X 60</font>
+      <br> CrossFit <br>
+      <small>Stronger...Everyday</small>
+    </section>
     <span fxFlex></span>
     <section fxLayout="column">
-      <section>Social Sharing Buttons</section>
-      <section>aksdgafsdgjkl</section>
+      <section fxLayoutAlign="end">
+        <a href="http://www.facebook.com/" target="_blank">
+            <img src="//simplesharebuttons.com/images/somacro/facebook.png" style="width:24px;height:24px;" alt="Facebook" />
+        </a>        
+      </section>
+      <section style="margin-bottom: -24px; margin-top: 8px;">
+         <a style="background-color: #AD1515" md-raised-button routerLink="/contact">
+          <font color="#ffffff">Book a free trial</font>
+         </a>
+      </section>
     </section>
   </md-toolbar>
 
@@ -17,7 +29,7 @@
     <md-sidenav #sidenav class="example-sidenav" mode="side" opened="true" style="background-image: url(assets/images/bg.jpg);">
       <app-header></app-header>
     </md-sidenav>
-    <section style="background-color: teal; overflow: auto;" fxFlex>
+    <section style="background-color: #E5E5E5; overflow: auto;" fxFlex>
       <router-outlet></router-outlet>
     </section>
   </md-sidenav-container>
