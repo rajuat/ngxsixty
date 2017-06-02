@@ -1,5 +1,6 @@
 import { AppRoutingModule } from './router/app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -15,7 +16,7 @@ import { MdIconModule } from '@angular/material';
 import { MdSidenavModule } from '@angular/material';
 import { MdToolbarModule } from '@angular/material';
 import { MdCardModule } from '@angular/material';
-import { MdGridListModule } from '@angular/material';
+import { MdGridListModule, MdButtonModule } from '@angular/material';
 
 import { CarouselModule } from 'ngx-bootstrap';
 
@@ -28,6 +29,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { CrossfitComponent } from './crossfit/crossfit.component';
+import { HeaderService } from "app/header/header.service";
 
 
 const materialModules = [
@@ -37,17 +39,18 @@ const materialModules = [
   MdSidenavModule,
   MdToolbarModule,
   MdCardModule,
-  MdGridListModule
+  MdGridListModule,
+  MdButtonModule
 ];
 
 
 export const firebaseConfig = {
-    apiKey: "AIzaSyCSH7Mki02atIRZpPad873adWlYbgZwpOw",
-    authDomain: "x-sixty.firebaseapp.com",
-    databaseURL: "https://x-sixty.firebaseio.com",
-    projectId: "x-sixty",
-    storageBucket: "x-sixty.appspot.com",
-    messagingSenderId: "379360347057"
+  apiKey: "AIzaSyCSH7Mki02atIRZpPad873adWlYbgZwpOw",
+  authDomain: "x-sixty.firebaseapp.com",
+  databaseURL: "https://x-sixty.firebaseio.com",
+  projectId: "x-sixty",
+  storageBucket: "x-sixty.appspot.com",
+  messagingSenderId: "379360347057"
 };
 
 @NgModule({
@@ -57,6 +60,7 @@ export const firebaseConfig = {
     AppRoutingModule,
     BrowserModule,
     FormsModule,
+    FlexLayoutModule,
     HttpModule,
   ].concat(materialModules),
 
@@ -72,7 +76,7 @@ export const firebaseConfig = {
     CrossfitComponent
   ],
 
-  providers: [],
+  providers: [HeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

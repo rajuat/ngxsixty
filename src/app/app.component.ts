@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeaderService } from "app/header/header.service";
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app works!';
 
-  toggleSideNav(){}
+  openClose: boolean = true;
+
+  constructor(private sns: HeaderService) { }
+
+  toggleSideNav() {
+    this.sns.toggle();
+  }
+
+  isOpen() {
+    return true;
+  }
 }
