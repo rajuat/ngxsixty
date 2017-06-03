@@ -1,6 +1,7 @@
 .example-card {
   padding: 8px;
   margin: 8px;
+  background-color: transparent;
 }
 
 .example-header-image {

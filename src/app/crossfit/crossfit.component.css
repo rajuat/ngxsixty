@@ -2,11 +2,7 @@
   width: auto;
   margin: 8px;
 }
-
-.example-header-image {
-  background-image: url('../../assets/images/a.jpg');
-  background-size: cover;
-}
+  
 
 .img-size {
   width: 400px;

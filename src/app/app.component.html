@@ -1,14 +1,14 @@
 <section style="width:100%; height: 100%;" fxLayout="column">
-  <md-toolbar class="mat-elevation-z4">
+  <md-toolbar class="mat-elevation-z4" color="primary">
     <section>
       <button md-icon-button (click)="sidenav.toggle()">
       <md-icon>menu</md-icon>
       </button>
     </section>
-    <section style="padding-top: 26px;">
+    <section style="padding-top: 26px; padding-left: 8px;">
       <font color="#AD1515">X 60</font>
       <br> CrossFit <br>
-      <small>Stronger...Everyday</small>
+      <b><i><font size="2" color="#AD1515" style="margin-left: -40px;">Stronger...... Everyday</font></i></b>
     </section>
     <span fxFlex></span>
     <section fxLayout="column">
@@ -25,8 +25,8 @@
     </section>
   </md-toolbar>
 
-  <md-sidenav-container class="example-container" fxFlex>
-    <md-sidenav #sidenav class="example-sidenav" mode="side" opened="true" style="background-image: url(assets/images/bg.jpg);">
+  <md-sidenav-container fxFlex>
+    <md-sidenav #sidenav  mode="side" opened="false" style="background-color: #AD1515">
       <app-header></app-header>
     </md-sidenav>
     <section style="background-color: #E5E5E5; overflow: auto;" fxFlex>

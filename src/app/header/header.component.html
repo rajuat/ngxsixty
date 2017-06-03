@@ -1,49 +1,5 @@
-<aside id="sidebar" class="sidebar sidebar-default open" role="navigation">
-    <div>
-        <!-- Sidebar navigation -->
-        <ul class="nav sidebar-nav">
-            
-            <li>
-                <a routerLink="/about">
-                <i class="sidebar-icon md-star"></i>
-                <font color="#FFFFFF">The X360 Lifestyle</font>
-            </a>
-            </li>
-            <li>
-                <a routerLink="/crossfit">
-                <i class="sidebar-icon md-send"></i>
-                <font color="#FFFFFF">About Crossfit</font>
-            </a>
-            </li>
-            <li>
-                <a routerLink="/diet">
-                <i class="sidebar-icon md-drafts"></i>
-                <font color="#FFFFFF">About Zone Diet</font>
-            </a>
-            </li>
-            <li>
-                <a routerLink="/contact">
-                <i class="sidebar-icon md-drafts"></i>
-                <font color="#FFFFFF">Book Free Trail</font>
-            </a>
-            </li>
-            <li>
-                <a routerLink="/contact">
-                <i class="sidebar-icon md-drafts"></i>
-                <font color="#FFFFFF">Contact Us</font>
-            </a>
-            </li>
-        </ul>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <a href="http://www.facebook.com/" target="_blank">
-                        <img src="//simplesharebuttons.com/images/somacro/facebook.png" style="width:20px;height:20px;" alt="Facebook" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</aside>
+<md-nav-list>
+  <md-list-item *ngFor="let link of links">
+     <a md-line routerLinkActive="active" routerLink="{{ link.link }}">{{ link.name }}</a>     
+  </md-list-item>
+</md-nav-list>

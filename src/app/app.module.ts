@@ -12,11 +12,15 @@ import 'hammerjs';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { MdIconModule } from '@angular/material';
-import { MdSidenavModule } from '@angular/material';
-import { MdToolbarModule } from '@angular/material';
-import { MdCardModule } from '@angular/material';
-import { MdGridListModule, MdButtonModule } from '@angular/material';
+import {
+  MdIconModule,
+  MdSidenavModule,
+  MdToolbarModule, 
+  MdCardModule, 
+  MdGridListModule, 
+  MdButtonModule, 
+  MdListModule, 
+} from '@angular/material';
 
 import { CarouselModule } from 'ngx-bootstrap';
 
@@ -40,7 +44,8 @@ const materialModules = [
   MdToolbarModule,
   MdCardModule,
   MdGridListModule,
-  MdButtonModule
+  MdButtonModule,
+  MdListModule
 ];
 
 
@@ -77,6 +82,6 @@ export const firebaseConfig = {
   ],
 
   providers: [HeaderService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

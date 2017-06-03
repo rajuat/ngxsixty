@@ -9,3 +9,9 @@
 .mat-toolbar {
     min-height: 96px;
 }
+
+@media only screen and (max-width: 500px) {
+    .hide-on-small-screens {
+        display: none;
+    }
+}
